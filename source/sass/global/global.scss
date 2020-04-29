@@ -1,0 +1,63 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  color: $color-main-blue;
+  font-style: normal;
+  background-color: #ffffff;
+}
+
+.container {
+  width: $desktop-width;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (max-width: $tablet-width) {
+    width: 768px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
