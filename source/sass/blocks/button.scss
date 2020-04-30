@@ -1,0 +1,22 @@
+
+.button {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  width: 183px;
+  min-height: 42px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: $color-light-blue;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 16px 10px 16px;
+
+  &--white {
+    border: 1px solid #6f6d7b;
+    background-color: #ffffff;
+    color: $color-main-blue;
+  }
+}

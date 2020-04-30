@@ -3,32 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Medialine</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
-  <link href="./style/style.min.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <nav class="header__main-nav main-nav">
-      <a class="main-nav__logo" href="index.html">
-        LoremIpsum.<span class="main-nav__logo-domain light-blue-text">Net</span>
-      </a>
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__item-link" href="index.html">Бизнес</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link" href="#">О нас</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link" href="#">Цены</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link" href="#">Оформить заказ</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="header__about">
+    <div class="header__wrapper">
+      <nav class="header__main-nav main-nav container">
+        <a class="main-nav__logo" href="index.html">
+          LoremIpsum.<span class="main-nav__logo-domain light-blue-text">Net</span>
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-link main-nav__item-link--active" href="index.html">Бизнес</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="#">Цены</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="header__about container">
       <h1 class="header__about-title"><span class="header__about-title-blue light-blue-text">Lorem ipsum</span> dolor sit amet consectetur <span class="header__about-title-blue light-blue-text">adipiscin</span></h1>
       <p class="header__about-description">
         <span class="header__about-description-bold">At vero eos et accusamus et iusto odio dignissimos ducimus!</span><br>
@@ -38,29 +41,29 @@
       </p>
       <div class="header__buttons-wrapper">
       <a class="header__order-button button">Заказать</a>
-      <a class="header__about-button button">Подробнее</a>
+      <a class="header__about-button button button--white">Подробнее</a>
       </div>
     </section>
   </header>
   <main class="main">
-    <section class="main__order order">
+    <section class="main__order order container">
       <h2 class="order__title">Оформление <span class="order__title-blue light-blue-text">заказа</span></h2>
-      <p class="order__subtitle"></p>
+      <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
       <ul class="order__scheme-list">
         <li class="order__scheme-item scheme-item">
-          <h3 class="scheme-item__title">Lorem ipsum dolor sit amet</h3>
+          <h3 class="scheme-item__title">Lorem ipsum dolor<br> sit amet</h3>
         </li>
         <li class="order__scheme-item scheme-item">
-          <h3 class="scheme-item__title">onsecteturadipiscing eli</h3>
+          <h3 class="scheme-item__title">Consecteturadipiscing eli</h3>
         </li>
         <li class="order__scheme-item scheme-item">
           <h3 class="scheme-item__title">Sed do eiusmod tempor</h3>
         </li>
         <li class="order__scheme-item scheme-item">
-          <h3 class="scheme-item__title">Esse cillum dolore eu fugiat</h3>
+          <h3 class="scheme-item__title">Esse cillum dolore<br> eu fugiat</h3>
         </li>
         <li class="order__scheme-item scheme-item">
-          <h3 class="scheme-item__title">Excepteur sint occaecat cupidatat non proident</h3>
+          <h3 class="scheme-item__title">Excepteur sint occaecat<br> cupidatat non proident</h3>
         </li>
       </ul>
       <form class="order__form form" action="http://echo.htmlacademy.ru" method="post">
@@ -76,15 +79,20 @@
         </label>
         <label><input class="form__email-input" type="email" placeholder="Ваш e-mail" required></label>
         <label><input class="form__name-input" type="text" placeholder="Ваше имя" required></label>
-        <label>Sed ut perspiciatis, unde omnis iste natus <span class="form__range-span">75%</span><input class="form__range-input" type="range" value="75"></label>
-        <label><input class="form__file-input" type="file" value="Прикрепить файл" placeholder="Прикрепить файл"></label>
+        <div class="form__input-range-wrapper">
+          <label class="form__label-range" for="range-input">Sed ut perspiciatis, unde omnis iste natus</label>
+          <span class="form__range-span">75%</span>
+          <input class="form__range-input" id="range-input" type="range" value="75">
+        </div>
+        <label><input class="form__file-input" type="file"></label>
         <button class="form__button button" type="submit">Отправить</button>
       </form>
     </section>
   </main>
 
   <footer class="footer">
-    <h2 class="footer__title">&copy; 2018 «LoremIpsum.net» Все права защищены.</h2>
+    <div class="footer__wrapper container">
+    <h2 class="footer__title">&copy; 2018 «LOREMIPSUM.NET» Все права защищены.</h2>
     <ul class="footer__wallets-list wallets-list">
       <li class="wallets-list__item">
         <a class="wallets-list__link" href="http://www.qiwi.com" target="_blank">Qiwi wallet</a>
@@ -98,12 +106,13 @@
     </ul>
     <ul class="footer__social-list social-list">
       <li class="social-list__item">
-        <a class="social-list__link" href="mailto: info@ipsum228.com" target="_blank">info@ipsum228.com</a>
+        <a class="social-list__link" href="mailto:info@ipsum228.com" target="_blank">info@ipsum228.com</a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link" href=http://www.vk.com" target="_blank">Мы вконтакте</a>
+        <a class="social-list__link" href="http://www.vk.com" target="_blank">Мы вконтакте</a>
       </li>
     </ul>
+    </div>
   </footer>
 </body>
 </html>

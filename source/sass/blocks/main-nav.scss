@@ -1,0 +1,41 @@
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 66px;
+  align-items: center;
+}
+
+.main-nav__logo {
+  color: #ffffff;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 28px;
+  width: 266px;
+}
+
+.main-nav__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  width: 435px;
+  justify-content: space-between;
+}
+
+.main-nav__item {
+  line-height: 16px;
+}
+
+.main-nav__item-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+
+  &--active {
+    color: #43abf0;
+  }
+}

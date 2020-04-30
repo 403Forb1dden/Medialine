@@ -1,0 +1,108 @@
+
+.order {
+  min-height: 880px;
+  padding-top: 118px;
+}
+
+.order__title {
+  @include reset-list;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.order__subtitle {
+  @include reset-list;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.order__scheme-list {
+  @include reset-list;
+  color: #ffffff;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  width: 1170px;
+  justify-content: space-between;
+  margin-bottom: 79px;
+}
+
+.scheme-item__title {
+  @include reset-list;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.order__scheme-item {
+  position: relative;
+}
+
+//.scheme-item__title::before {
+//  position: absolute;
+//  width: 100px;
+//  height: 100px;
+//  top: -115px;
+//  left: calc(50% - 50px);
+//  content: "";
+//  background-image: url("../img/scheme-item-1.png");
+//  background-repeat: no-repeat;
+//  background-position: center;
+//}
+
+.order__scheme-item:not(:last-child)::after {
+  position: absolute;
+  width: 102px;
+  //height: 100px;
+  color: #bbbbbb;
+  top: -85px;
+  font-size: 40px;
+  letter-spacing: 14px;
+  left: 109%;
+  content: ".....";
+}
+
+.order__scheme-item:nth-child(2)::after {
+  left: 98%;
+}
+
+.order__scheme-item:nth-child(3)::after {
+  left: 94%;
+}
+
+.order__scheme-item::before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -115px;
+  left: calc(50% - 50px);
+  content: "";
+  background-image: url("../img/scheme-item-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.order__scheme-item:nth-child(2)::before {
+  background-image: url("../img/scheme-item-2.png");
+}
+
+.order__scheme-item:nth-child(3)::before {
+  background-image: url("../img/scheme-item-3.png");
+}
+
+.order__scheme-item:nth-child(4)::before {
+  background-image: url("../img/scheme-item-4.png");
+}
+
+.order__scheme-item:nth-child(5)::before {
+  background-image: url("../img/scheme-item-5.png");
+}

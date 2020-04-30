@@ -1,0 +1,95 @@
+
+.footer {
+  //min-height: 80px;
+  background-color: #3d4050;
+}
+
+.footer__wrapper {
+  display: flex;
+  min-height: 80px;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.footer__title {
+  @include reset-list;
+  font-size: 13px;
+  line-height: 14px;
+  color: #ffffff;
+  //width: 327px;
+  margin-right: 32px;
+}
+
+.footer__wallets-list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  width: 475px;
+
+  padding: 0 53px 0 68px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.wallets-list__link {
+  color: #c3c3c3;
+}
+
+.wallets-list__item {
+  position: relative;
+}
+
+.wallets-list__item::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: -24px;
+  top: 0;
+  background-image: url("../img/qiwi-ico.png");
+  background-repeat: no-repeat;
+}
+
+.wallets-list__item:nth-child(2)::before {
+  width: 11px;
+  left: -22px;
+  background-image: url("../img/yandex-ico.png");
+}
+
+.wallets-list__item:nth-child(3)::before {
+  top: 1px;
+  background-image: url("../img/webmoney-ico.png");
+}
+
+.footer__social-list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  width: 292px;
+  padding-left: 30px;
+
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.social-list__item {
+  position: relative;
+}
+
+.social-list__item::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 13px;
+  left: -24px;
+  top: 3px;
+  background-image: url("../img/mail-ico.png");
+  background-repeat: no-repeat;
+}
+
+.social-list__item:last-child::before {
+  width: 11px;
+  background-image: url("../img/vk-ico.png");
+}
