@@ -23,6 +23,28 @@
   color: $color-background-blue;
 }
 
+.form__select-list {
+  //appearance: none;
+  overflow: scroll;
+}
+
+.form__select-list:focus {
+  background-color: #3d4050;
+  overflow: scroll;
+  //height: 100px;
+}
+
+.select-list__item {
+}
+
+//.select-list__item:hover {
+//  //box-shadow: 0 0 10px 100px rgba(61, 64, 80, 0.1) inset;
+//  //background-color: rgba(61, 64, 80, 0.1);
+//  //box-shadow: 0 0 10px 100px #1882A8 inset;
+//  //opacity: 0.9;
+//  //color: red;
+//}
+
 .form__email-input::placeholder,
 .form__name-input::placeholder {
   color: $color-background-blue;
