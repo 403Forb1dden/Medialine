@@ -1,6 +1,5 @@
 
 .footer {
-  //min-height: 80px;
   background-color: #3d4050;
 }
 
@@ -10,7 +9,7 @@
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
+  padding-top: 30px;
 }
 
 .footer__title {
@@ -18,7 +17,6 @@
   font-size: 13px;
   line-height: 14px;
   color: #ffffff;
-  //width: 327px;
   margin-right: 32px;
 }
 
@@ -92,4 +90,83 @@
 .social-list__item:last-child::before {
   width: 11px;
   background-image: url("../img/vk-ico.png");
+}
+
+@media (max-width: $tablet-width) {
+  .footer__wrapper {
+    min-height: 120px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer__title {
+    width: 180px;
+    text-align: left;
+    line-height: 22px;
+  }
+
+  .footer__wallets-list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .wallets-list__item {
+    margin-bottom: 5px;
+  }
+
+  .footer__social-list {
+    flex-direction: column;
+    justify-content: normal;
+    width: 150px;
+  }
+
+  .social-list__item {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer__title {
+    width: 180px;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer__wallets-list {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .wallets-list__item {
+    margin-bottom: 10px;
+  }
+
+  .footer__social-list {
+    flex-direction: column;
+    justify-content: normal;
+    width: 150px;
+  }
+
+  .social-list__item {
+    margin-bottom: 10px;
+  }
 }

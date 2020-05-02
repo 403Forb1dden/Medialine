@@ -35,9 +35,9 @@
       <h1 class="header__about-title"><span class="header__about-title-blue light-blue-text">Lorem ipsum</span> dolor sit amet consectetur <span class="header__about-title-blue light-blue-text">adipiscin</span></h1>
       <p class="header__about-description">
         <span class="header__about-description-bold">At vero eos et accusamus et iusto odio dignissimos ducimus!</span><br>
-        - Totam rem aperiam eaque ipsa<br>
-        - Sit voluptatem accusantium doloremque laudantium<br>
-        - Sed ut perspiciatis, unde omnis iste natus error
+        <span class="header__about-description-string"> - Totam rem aperiam eaque ipsa<br></span>
+        <span class="header__about-description-string">- Sit voluptatem accusantium doloremque laudantium<br></span>
+        <span class="header__about-description-string">- Sed ut perspiciatis, unde omnis iste natus error</span>
       </p>
       <div class="header__buttons-wrapper">
       <a class="header__order-button button">Заказать</a>
@@ -67,29 +67,32 @@
         </li>
       </ul>
       <form class="order__form form" action="http://echo.htmlacademy.ru" method="post">
-        <label>
-          <select class="form__select-list select-list" size="1" name="Выберите тип системы">
-            <option class="select-list__item" value="" hidden>Выберите тип системы</option>
-            <option class="select-list__item light-blue-text">Sed ut perspiciatis</option>
-            <option class="select-list__item">Nemo enim ipsam</option>
-            <option class="select-list__item">Et harum quidem</option>
-            <option class="select-list__item">Temporibus autem</option>
-            <option class="select-list__item">Itaque earum rerum</option>
-            <option class="select-list__item">Sed ut perspiciatis</option>
-            <option class="select-list__item">Nemo enim ipsam</option>
-            <option class="select-list__item">Et harum quidem</option>
-            <option class="select-list__item">Temporibus autem</option>
-            <option class="select-list__item">Itaque earum rerum</option>
-          </select>
-        </label>
+        <div class="form__select-wrapper">
+          <button class="form__select-button">Выберите тип системы</button>
+          <ul class="form__select-list select-list">
+            <li class="select-list__item">Sed ut perspiciatis</li>
+            <li class="select-list__item">Nemo enim ipsam</li>
+            <li class="select-list__item">Et harum quidem</li>
+            <li class="select-list__item">Temporibus autem</li>
+            <li class="select-list__item">Itaque earum rerum</li>
+            <li class="select-list__item">Sed ut perspiciatis</li>
+            <li class="select-list__item">Nemo enim ipsam</li>
+            <li class="select-list__item">Et harum quidem</li>
+            <li class="select-list__item">Temporibus autem</li>
+            <li class="select-list__item">Itaque earum rerum</li>
+          </ul>
+        </div>
         <label><input class="form__email-input" type="email" placeholder="Ваш e-mail" required></label>
         <label><input class="form__name-input" type="text" placeholder="Ваше имя" required></label>
         <div class="form__input-range-wrapper">
-          <label class="form__label-range" for="range-input">Sed ut perspiciatis, unde omnis iste natus</label>
+          <span class="form__label-range">Sed ut perspiciatis, unde omnis iste natus</span>
           <span class="form__range-span">75%</span>
-          <input class="form__range-input" id="range-input" type="range" value="75">
+          <div class="form__range-input"></div>
         </div>
-        <label><input class="form__file-input" type="file"></label>
+        <div class="form__file-wrapper">
+        <input class="form__file-input" id="file-input-label" type="file">
+        <label for="file-input-label">Прикрепите файл</label>
+        </div>
         <button class="form__button button" type="submit">Отправить</button>
       </form>
     </section>
@@ -119,5 +122,7 @@
     </ul>
     </div>
   </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>

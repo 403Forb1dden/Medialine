@@ -2,6 +2,7 @@
 .main {
   background-color: $color-background-blue;
   background-image: url("../img/map.png");
+  overflow: hidden;
   background-size: 1920px 880px;
   background-position: center;
 }
